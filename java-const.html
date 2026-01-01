@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Java Script | second Class | using const</title>
+        <script>
+            function MyFunction() {
+            document.getElementById("java").innerHTML = "Bye Bye Bye!" ;
+            document.getElementById("script").innerHTML = "this made by Muhammad Huzaifa" ;
+        }
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript const</h2>
+        <p id="name"></p>
+
+        <script>
+            try {
+            const FirstName = "Muhammad";//string
+            const LastName = "huzaifa";//string
+            const Age = 10;//number
+            const real = true;//boolean
+            }
+            catch (err) {
+            document.getElementById("name").innerHTML = "FirstName" + " " + "LastName";
+            document.getElementById("name").innerHTML = err;
+            }
+        </script>
+    <p class="p-[12px] text-red-500" id="java">Hello My Friend!</p>
+         <p class="p-[12px] text-red-500" id="script"></p>
+        <button type="button"
+            class=" m-[12px] w-40 h-10 bg-red-500 text-stone-50 rounded-lg shadow hover:bg-red-700"
+            onclick="MyFunction()">Click Me!</button>
+
+    </body>
+</html>

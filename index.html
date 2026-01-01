@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script | first Class | using Alert function</title>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Java Script | first Class | using Alert function</title>
+        <script>
         function MyFunction() {
             document.getElementById("java").innerHTML = "Bye Bye Bye!" ;
+            document.getElementById("script").innerHTML = "this made by Muhammad Huzaifa" ;
         }
     </script>
-</head>
-<body>
-    <h1 id="myH"></h1>
-    <p id="php"></p>
-    <script>
+    </head>
+    <body>
+        <h2 class="p-[12px] font-black">Java Script | alert function used | function used on button</h2>
+        <p class="p-[12px]" id="php"></p>
+        <script>
         let a, b, c, d, e, f;
-        a = 59; b = 65; c = a + b; d = c - b; e = c % d; f = e * d;
+        a = 59;
+        b = 65;
+        c = a + b;
+        d = c - b;
+        e = c % d;
+        f = e * d;
 
         // Change heading:
-        document.getElementById("myH").innerHTML = "Java Script | using alert function";
-        alert("Hello!, My name is Muhammad Huzaifa");
-        document.getElementById("php").innerHTML = f + f + f - (c * e) ;
+        
+        alert("Hello!, My name is Muhammad Huzaifa");//strig used
+        document.getElementById("php").innerHTML = f + f + f - (c * e) * e ;
+        /*
+        alert function used on line number 30
+        */
     </script>
-    <p  id="java">Hello!</p>
-    <button type="button" onclick="MyFunction()">Click Me!</button>
-</body>
+        <p class="p-[12px]" id="java">Hello!</p>
+         <p class="p-[12px]" id="script"></p>
+        <button type="button"
+            class=" m-[12px] w-40 h-10 bg-red-500 text-stone-50 rounded-lg shadow hover:bg-red-700"
+            onclick="MyFunction()">Click Me!</button>
+            
+       
+    </body>
 </html>

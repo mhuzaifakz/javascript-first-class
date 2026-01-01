@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <p>An Array is an object type. It Used to store data collection</p>
+    <p id="fullname"></p>
+    <p id="array"></p>
+    <p id="two-array"></p>
+    <p id="three-array"></p>
+    <p id="four-array"></p>
+    <p id="five-array"></p>
+
+
+    <script>
+        let firstname = "Muhammad";
+        let lastname = "Huzaifa";
+        document.getElementById("fullname").innerHTML = firstname + " " + lastname ;
+        //----- Array Object -----
+        const fruits = ["Apple", " Banana", " orange", " Grapes", " pear", " Melon"];
+        const games = ["Pacman", " Bedwars", " one Block", " Zombie Fight", " Roblox"];
+        const familymember = ["Grand Father", " Grand Mother", " mother", " father", " brother", " sisters"];
+        const phonenumber = [+92348673, + 92456812, + 92557923];
+        const company = ["apple", " sumsung", " android"];
+        document.getElementById("array").innerHTML = fruits ;
+        document.getElementById("two-array").innerHTML = games ;
+        document.getElementById("three-array").innerHTML = familymember ;
+        document.getElementById("four-array").innerHTML = phonenumber ;
+        document.getElementById("five-array").innerHTML = company ;
+    </script>
+</body>
+</html>
