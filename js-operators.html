@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Operators</title>
+        <script>
+            function myFunction() {
+            document.getElementById("head").innerHTML = "Java Script Operator's Defination";
+            document.getElementById("onedef").innerHTML = "<strong>** (Exponentiation) =</strong> raising a number (the base) to the power of another number (the exponent)";
+            document.getElementById("twodef").innerHTML = "<strong>% (Modulus) =</strong>  The % symbol represents the remainder operator.<br> It calculates the remainder left over when one operand is divided by a second operand [2, 3]. ";
+            document.getElementById("threedef").innerHTML = "<strong>++ (Increment) = </strong> The ++ operator is the increment operator.<br> It is a unary operator used to increase the value of its operand (a variable) by one unit [1]. ";
+            document.getElementById("fourdef").innerHTML = "<strong>-- (Decrement) =</strong>  The double-hyphen (--) is the decrement operator [1, 2].<br> It is used to decrease the value of a numeric variable by exactly 1.";
+            document.getElementById("fivedef").innerHTML = "<strong>+= (compound assignment) =</strong>  The += operator is a compound assignment operator used to add the value of the right operand to a variable and assign the result back to that variable.<br> It is a shorthand for a longer expression [1]. ";
+            document.getElementById("sixdef").innerHTML = "<strong>-= (subtraction assignment operator) =</strong> The -= operator is a shorthand for performing a subtraction and an assignment simultaneously. ";
+            document.getElementById("sevendef").innerHTML = "<strong>*= (multiplication assignment operator) =</strong> The expression A *= B is equivalent to A = A * B [2].<br>It performs the following steps:<br> Multiplies the current value of the left operand (A) by the value of the right operand (B).<br> Assigns the resulting product back to the variable specified by the left operand (A) [2]. ";
+            document.getElementById("eightdef").innerHTML = "<strong>/= (division assignment operator) =</strong> The /= operator is the division assignment operator.<br> It divides the variable on the left by the value on the right, and then assigns the result of that division back to the variable on the left [1]. ";
+            document.getElementById("ninedef").innerHTML = "<strong>%= (remainder assignment operator) =</strong> It performs a remainder operation (sometimes referred to as modulo) using the two operands and then assigns the result to the left operand. ";
+            document.getElementById("tendef").innerHTML = "<strong>**= (exponentiation assignment operator) =</strong> The ** operator returns the result of raising the first operand (the base) to the power of the second operand (the exponent).<br> Syntax: base ** exponentFunctionality:<br> It calculates base raised to the power of exponent (e.g., base to the exponent power).";
+            document.getElementById("elevendef").innerHTML = "<strong>=== (strict equality comparison operator) =</strong> The === operator performs strict comparison, meaning it returns true only if both operands (the values being compared) have the same data type and the same value.<br> If the types are different, the result is automatically false, without any type conversion (coercion) taking place [1, 2]. ";
+            document.getElementById("twelvedef").innerHTML = "<strong>!== (strict inequality assignment operator) =</strong> The !== operator works by comparing both the value and the type of its operands.<br> It returns true if the operands are of different types, or if they are of the same type but have different values [1].<br> It returns false only if both the value and the type of the two operands are exactly the same [1]. ";
+            document.getElementById("thirteendef").innerHTML = "<strong>>= ( greater than or equal to comparison operator) =</strong>  It is used to compare two values and returns a Boolean value (true or false) indicating whether the left operand is greater than or equal to the right operand [1]. ";
+            document.getElementById("fourteendef").innerHTML = "<strong><= ( less than or equal to operator) =</strong> The less than or equal to operator checks if the operand on the left side has a value that is less than, or equal to, the value of the operand on the right side [1, 2]. ";
+        }  
+        </script>
+        <script>
+        function twoMyFunction() {
+                document.getElementById("headtwo").innerHTML = "Java Script Operator's code";
+                document.getElementById("onecode").innerHTML = "<strong>** (Exponentiation) =</strong> 2 ** 3 = 8";
+                document.getElementById("twocode").innerHTML = "<strong>% (Modulus) =</strong> 10 % 3 = 1";
+                document.getElementById("threecode").innerHTML = "<strong>++ (Increment) = </strong> i = 0 i++ ans: i = 1";
+                document.getElementById("fourcode").innerHTML = "<strong>-- (Decrement) =</strong> w = 5 w-- ans: w = 4";
+                document.getElementById("fivecode").innerHTML = "<strong>+= (compound assignment) =</strong> 5 += 3 = 8";
+                document.getElementById("sixcode").innerHTML = "<strong>-= (subtraction assignment operator) =</strong> 5 -= 2 = 3";
+                document.getElementById("sevencode").innerHTML = "<strong>*= (multiplication assignment operator) =</strong> 10 *= 3 = 30";
+                document.getElementById("eightcode").innerHTML = "<strong>/= (division assignment operator) =</strong>  10 /= 2 = 5" ;
+                document.getElementById("ninecode").innerHTML = "<strong>%= (remainder assignment operator) =</strong> 2 %= 3 = 1";
+                document.getElementById("tencode").innerHTML = "<strong>**= (exponentiation assignment operator) =</strong> 5 **= 5 = 3125";
+                document.getElementById("elevencode").innerHTML = "<strong>=== (strict equality comparison operator) =</strong> 5 === 5 ans: true ";
+                document.getElementById("twelvecode").innerHTML = "<strong>!== (strict inequality assignment operator) =</strong> 5 !== 5 ans: false";
+                document.getElementById("thirteencode").innerHTML = "<strong>>= ( greater than or equal to comparison operator) =</strong>  5 >= 10 ans: false";
+                document.getElementById("fourteencode").innerHTML = "<strong><= ( less than or equal to operator) =</strong> 5 <= 10 ans: true";
+            } 
+            </script> 
+        
+        
+            <script>
+        let x = 2;
+        let resultone = x ** 3; // result is 8
+        let resulttwo = 10 % 3; // result is 1
+        let i = 0; i++;
+        let resultthree = i++; // i is now 1
+        let w = 5;
+        w--; // i is now 4
+        let resultfour = w--;
+        let a = 5;
+        a += 3;
+        let resultfive = a+= 3; // x is now 8 (x = x + 3)
+        let b = 10;
+        b /= 2;
+        let resultsix = b /= 2; // x is now 5 (x = x / 2)
+        let c = 10;
+        c *= 3;
+        let resultseven = c *= 3; // x is now 1 (x = x % 3)
+        let u = 5;
+        u -= 2; // x is now 3 (x = x - 2)
+        let resulteigth = u -= 2;
+        let s = 2;
+        s %= 3; // x is now 8 (x = x ** 3)
+        let resultnine = s %= 3;
+       
+        5 **= 5; // true
+        5 **= "5"; // false 
+        let resultten =  5 **= 5;
+        5 === 5; // true
+        5 === "5"; // false 
+        let resulteleven =  5 === 5;
+        5 !== 5; // false
+        5 !== "5"; // true   
+        let resulttwelve = 5 !== 5;   
+        10 >= 5; // true
+        5 >= 10; // false
+        let resultthirteen = 5 >= 10; 
+        5 <= 10; // true
+        10 <= 5; // false
+        let resultfourteen = 5 <= 10;
+        
+        </script>
+    </head>
+    <body>
+        <h1 class="p-[12px] text-red-500 text-center shadow-xl font-black"
+            id="head"></h1><br><br>
+        <p id="onedef" class="text-center"></p><br>
+        <p id="twodef" class="text-center"></p><br>
+        <p id="threedef" class="text-center"></p><br>
+        <p id="fourdef" class="text-center"></p><br>
+        <p id="fivedef" class="text-center"></p><br>
+        <p id="sixdef" class="text-center"></p><br>
+        <p id="sevendef" class="text-center"></p><br>
+        <p id="eightdef" class="text-center"></p><br>
+        <p id="ninedef" class="text-center"></p><br>
+        <p id="tendef" class="text-center"></p><br>
+        <p id="elevendef" class="text-center"></p><br>
+        <p id="twelvedef" class="text-center"></p><br>
+        <p id="thirteendef" class="text-center"></p><br>
+        <p id="fourteendef" class="text-center"></p><br>
+        <button type="button"
+            class="text-center m-[12px] w-60 h-20 bg-red-500 text-stone-50 rounded-lg shadow hover:bg-red-700"
+            onclick="myFunction()">Want The Defination Of Some Hard Operators,
+            So Click Me!</button>
+        <button
+            class="block text-center m-[12px] w-60 h-20 bg-red-500 text-stone-50 rounded-lg shadow hover:bg-red-700"
+            onclick="twoMyFunction()">Want The OutPut, So Click Me!</button>
+        <h1
+            class="p-[12px] text-red-500 text-center shadow-xl border-t my-auto font-black"
+            id="headtwo"></h1><br><br>
+        <p id="onecode" class="text-center"></p><br>
+        <p id="twocode" class="text-center"></p><br>
+        <p id="threecode" class="text-center"></p><br>
+        <p id="fourcode" class="text-center"></p><br>
+        <p id="fivecode" class="text-center"></p><br>
+        <p id="sixcode" class="text-center"></p><br>
+        <p id="sevencode" class="text-center"></p><br>
+        <p id="eightcode" class="text-center"></p><br>
+        <p id="ninecode" class="text-center"></p><br>
+        <p id="tencode" class="text-center"></p><br>
+        <p id="elevencode" class="text-center"></p><br>
+        <p id="twelvecode" class="text-center"></p><br>
+        <p id="thirteencode" class="text-center"></p><br>
+        <p id="fourteencode" class="text-center"></p><br>
+    </body>
+</html>
