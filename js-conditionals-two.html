@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>swicth function | ternary | booleans | logical |
+            javaScirpt</title>
+    </head>
+    <body>
+        <script>
+        //---ternary---
+        let ageHadi = 10;
+        let bigger = true;
+        let number = bigger ? 0.2 : 0;
+        let ageHuzaifa = 10 - (ageHadi * number)
+
+
+        document.getElementById("ternary").innerHTML = "Huzaifa's Age is" + ageHuzaifa;
+    </script>
+        <p id="ternary"></p>
+        <p id="day"></p>
+        <script>
+    //---swicth---
+        let day;
+        let date = new Date().getDay();
+ 
+        switch (date) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+        break;
+        case  6:
+            day = "Saturday";
+}
+
+        document.getElementById("day").innerHTML = "Today is " + day;
+    </script>
+
+    <script>
+        //---booleans---
+        let x = 12;
+        let result = x > 4 ;
+        let y = 13;
+        let resulttwo = y < 5; 
+        let z = 15;
+        let resultthree = z != 45;
+        let a = 20 ;
+        let resultfour = a == 20;
+        document.getElementById("first").innerHTML = "12 > 4 = true";
+        document.getElementById("second").innerHTML = "13 < 5 = false";
+        document.getElementById("thired").innerHTML = "15 != 45 = true";
+        document.getElementById("fourt").innerHTML = "20 == 20 = true";
+    </script>
+    
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="thired"></p>
+    <p id="fourt"></p>
+        <script>
+            //---logical---
+        let w = 6;
+        let d = 3;
+
+        document.getElementById("log").innerHTML = 
+        (d < 10 && w > 1) + "<br>" +
+        (d < 10 && w < 1);
+
+
+        document.getElementById("logtwo").innerHTML = 
+        (d === 5 || w === 5) + "<br>" + 
+        (d === 6 || w === 5) + "<br>" + 
+        (d === 6 || w === 3);
+
+        document.getElementById("logthree").innerHTML = (5 == 8);
+        document.getElementById("logfour").innerHTML = !(5 == 8);
+</script>
+    
+    <p id="log"></p>
+    <p id="logtwo"></p>
+    <p id="logthree"></p>
+    <p id="logfour"></p>
+
+    </body>
+</html>
