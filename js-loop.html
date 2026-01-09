@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>javaScirpt | Loops</title>
+    </head>
+    <body class=" bg-stone-300">
+        <p id="html" class="text-center mt-10 text-red-700"></p>
+        <p id="css" class="text-center mt-10 text-red-700"></p>
+        <p id="js" class="text-center mt-10 text-red-700"></p>
+        <p id="php" class="text-center mt-10 text-red-700"></p>
+        <p id="tailwind" class="text-center mt-10 text-red-700"></p>
+        <p id="w3" class="text-center mt-10 text-red-700"></p>
+        <p id="loop" class="text-center mt-10 text-red-700"></p>
+        <p id="sql" class="text-center mt-10 text-red-700"></p>
+        <script>
+        //----Loops----
+        const fruits = ["apple", "banana", "grapse", "dragonFruit", "orange"];
+        const names = ["Huzaifa", "Hadi", "Abdullah", "Danial", "Mustafa"];
+        const games = ["Pacman", " Bedwars", " one Block", " Zombie Fight", " Roblox"];
+        const familymembers = ["Grand Father", " Grand Mother", " mother", " father", " brother", " sisters"];
+        const companys = ["apple", " sumsung", " android"];
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        const phonenumbers = [+92348673, +92456812, +92557923];
+        const apps = ["App Store", "zoom.us", "Google Chrome", "Face Time",]
+
+        let len = fruits.length;
+        let lentwo = names.length;
+        let lenthree = games.length;
+        let lenfour = familymembers.length;
+        let lenfive = companys.length;
+        let lensix = cars.length;
+        let lenseven = phonenumbers.length;
+        let leneigth = apps.length;
+        
+        
+        document.getElementById("html").innerHTML = "<strong>the length of fruit = </strong>" + len;
+        document.getElementById("css").innerHTML = "<strong>the length of names = </strong>" +  lentwo;
+        document.getElementById("js").innerHTML =  "<strong>the length of games = </strong>" + lenthree;
+        document.getElementById("php").innerHTML = "<strong>the length of familymembers = </strong>" +  lenfour;
+        document.getElementById("tailwind").innerHTML = "<strong>the length of companys = </strong>" +  lenfive;
+        document.getElementById("w3").innerHTML = "<strong>the length of cars = </strong>" +  lensix;
+        document.getElementById("loop").innerHTML = "<strong>the length of phonenumbers = </strong>" +  lenseven;
+        document.getElementById("sql").innerHTML = "<strong>the length of apps = </strong>" +  leneigth;
+    </script>
+    </body>
+</html>
