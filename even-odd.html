@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Even And Odd | javaScirpt</title>
+    <title>Even And Odd By For Loops</title>
 </head>
 <body>
-        <p id="test"></p>
-    <script>
-        function evenOdd() {
-            const myNumber = document.getElementById("mynumber").Value ;
-            const converedString = Number(myNumber) ;
-            if(myNumber === "") {
-                document.getElementById("test").innerText = "Please give me a number";
-            }
-            else {
-                console.log(myNumber);
-                console.log(converedString)
+    <p id="odd-numbers"></p>
+    <p id="even-numbers"></p>
+    <p id="numbers"></p>
+      <script>
+        for(let myNumber = 0; myNumber <= 50 ; myNumber++) {
+            if (myNumber % 2 === 0){
+                document.getElementById("even-numbers").innerHTML += myNumber + "<br>" + "this is even Number";
+            } else if(myNumber % 2 !== 0) {
+                document.getElementById("odd-numbers").innerHTML += myNumber + "<br>" + "this is odd Number"
             }
         }
-
-    </script>
+      </script>
 </body>
 </html>
