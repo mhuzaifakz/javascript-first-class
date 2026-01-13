@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>javaScript | Strings | Numbers</title>
+</head>
+<body>
+   
+    <script>
+    //-- Simple Strings --
+    const name = "Huzaifa";
+    const nameTwo = 'Abdul Hadi';
+
+    //-- Simple Numbers --
+    const number = 123;
+    const numberTwo = 0.094;
+
+    //-- Advanced Strings --
+    const sentence = "I am 'Muhammad Huzaifa'";
+    const sentenceTwo = 'My age is "ten"';
+
+    //-- String Length --
+    const fullName = "Muhammad Huzaifa Khanzada";
+    const fatherFullName = "Muhammad Furqan Khanzada";
+
+    const length = fullName.length;
+    const lengthTwo = fatherFullName.length;
+
+    //-- Interpolation --
+    let firstName = "Muhammad";
+    let lastName = "Huzaifa";
+
+    let holeName = `Welcome ${firstName}, ${lastName}!`;
+
+    //-- Advance Numbers --
+
+    //-- Integer Precision --
+    const lotsNumbers = 99999999999999999999;
+    const lotsNumbersTwo = 9999999999999999999999999999;
+
+    //-- Floating Precision --
+    const floater = 0.34;
+    const floaterTwo = 1.98;
+    const total = floater + floaterTwo;
+
+    //-- Adding Numbers and Strings --
+        const a = 40;
+        const b = 3;
+        const c = a + b;
+
+        const d = "6";
+        const e = "7";
+        const f = d + e; 
+
+     //-- NaN - Not a Number --
+
+     const nan = 23 / 67 ;
+
+    console.log("Simple Strings:\n" + name + "\n" + nameTwo);
+    console.log("Simple Numbers: " + number + "    " + numberTwo);
+    console.log("Full name length:", length);
+    console.log("Father name length:", lengthTwo);
+    console.log("we Can Use Interpolation like this: " + holeName);
+    console.log("this is Integer Precision: \n" + lotsNumbers + "\n" + lotsNumbersTwo);
+    console.log("this is Floating Precision: " + total);
+    console.log("Add 40 + 3 = " + c);
+    console.log("add '6' + '7' = " + f);
+    console.log("this is not a number: " + isNaN(nan));
+    </script>
+</body>
+</html>
