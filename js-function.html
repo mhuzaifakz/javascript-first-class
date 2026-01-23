@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Function</title>
+</head>
+<body>
+
+    <p id="text"></p>
+    <p id="texttwo"></p>
+
+    <script>
+        function text() {
+            return "My Name is Muhammad Huzaifa";
+        }
+
+        function textTwo() {
+            return "My Age is 11";
+        }
+
+        // show name
+        document.getElementById("text").innerHTML = text();
+
+        // show age
+        const age = textTwo();
+        document.getElementById("texttwo").innerHTML = age;
+
+        //-- function used in Multipy --
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        const result = multiply(45, 67);
+        console.log("The result of 45 * 67 = ", result);
+
+        //-- function used in add --
+        function add(c, d) {
+            return c + d;
+        }
+
+        const addOne = add(67, 67);
+        const addTwo = add(100, 365);
+
+        console.log("The result of 67 + 67 = ", addOne, "and 100 + 365 = ", addTwo);
+
+        //-- Outside myFunction() carName is undefined. --
+
+        const out = "outside : " + typeof carName;
+        console.log( out );
+
+        function myFunction() {
+            const carName = "BMW";
+            const typeOfCarName = "inside : " + typeof carName + " " + carName;
+            console.log( typeOfCarName );
+        }
+        myFunction();
+    </script>
+
+</body>
+</html>
