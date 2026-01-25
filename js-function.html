@@ -3,59 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript | Function</title>
+    <title>javaScirpt | function</title>
 </head>
 <body>
-
-    <p id="text"></p>
-    <p id="texttwo"></p>
-
+    <button onclick="clickAlert()">Click it ot check the code</button>
     <script>
-        function text() {
-            return "My Name is Muhammad Huzaifa";
+        //--- Multiply Used in A function ---
+
+        function multiple(z, e) {
+            return z * e ;
         }
 
-        function textTwo() {
-            return "My Age is 11";
+        const result = multiple(6, 7);
+        console.log("result of 6 * 7 = ", result);
+
+        //--- Addion used in function ---
+
+        function add(a, k) {
+            return a + k;
+        }
+        const resultTwo = add(11, 100);
+        console.log("result of 11 + 100 = ", resultTwo);
+
+        //--- multiply using multiple times ---
+
+        function multiplyMultipleTimes(r, y) {
+            return r * y;
+        }
+        const mulitplyOne =  multiplyMultipleTimes(5, 6);
+        const mulitplyTwo = multiplyMultipleTimes( 50, 60);
+        const mulitplyThree = multiplyMultipleTimes(500, 600);
+
+        console.log("result of 5 * 6 = ", mulitplyOne);
+        console.log("result of 50 * 60 = ", mulitplyTwo);
+        console.log("result of 500 * 600 = ", mulitplyThree);
+
+        //--- multiply using multiple times ---
+
+        function addMultipleTimes(d, i) {
+            return d + i;
+        }
+        const addOne =  addMultipleTimes(7, 9);
+        const addTwo = addMultipleTimes( 70, 90);
+        const addThree = addMultipleTimes(700, 900);
+
+        console.log("result of 7 + 9 = ", addOne);
+        console.log("result of 70 + 90 = ", addTwo);
+        console.log("result of 700 + 900 = ", addThree);
+
+        //--- outside of function anf inside of function ---
+
+        const outside = "outside: " + typeof fruit;
+        console.log( outside );
+
+        function insideFuction() {
+            const fruit = "DrangonFruit"
+            const inside = "inside: " + typeof fruit + " " + fruit;
+            console.log( inside );
         }
 
-        // show name
-        document.getElementById("text").innerHTML = text();
+        insideFuction();
 
-        // show age
-        const age = textTwo();
-        document.getElementById("texttwo").innerHTML = age;
+        //--- Functions with Multiple Parameters ---
 
-        //-- function used in Multipy --
-        function multiply(a, b) {
-            return a * b;
+        function fullName(Firstname, Lastname) {
+            return Firstname + " " + Lastname;
         }
+        const myFullName = fullName("Muhammad", "Huzaifa Khanzada" );
+        console.log("my Full Name is ", myFullName)
 
-        const result = multiply(45, 67);
-        console.log("The result of 45 * 67 = ", result);
+        //--- Default Parameter Values ---
 
-        //-- function used in add --
-        function add(c, d) {
-            return c + d;
+        function defaultParameter(t, g = 20) {
+            return t * g;
         }
+        console.log( defaultParameter(40) );
 
-        const addOne = add(67, 67);
-        const addTwo = add(100, 365);
+        //--- Subtract Used in A function ---
 
-        console.log("The result of 67 + 67 = ", addOne, "and 100 + 365 = ", addTwo);
-
-        //-- Outside myFunction() carName is undefined. --
-
-        const out = "outside : " + typeof carName;
-        console.log( out );
-
-        function myFunction() {
-            const carName = "BMW";
-            const typeOfCarName = "inside : " + typeof carName + " " + carName;
-            console.log( typeOfCarName );
+        function Subtract(w, u) {
+            return w - u ; 
         }
-        myFunction();
+        const resultThree = Subtract(2, 9);
+        console.log("result of 2 - 6 = ", resultThree);
+
+        //--- Subtract using multiple times ---
+
+        function subractMultiple(q, m) {
+            return q - m ;
+        }
+        const subtractOne = subractMultiple(4, 8);
+        const subtractTwo = subractMultiple(40, 80);
+        const subtractThree = subractMultiple(400, 800);
+
+        
+        console.log("result of 4 - 8 =", subtractOne);
+        console.log("result of 40 - 80 =", subtractTwo);
+        console.log("result of 400 - 800 =", subtractThree);
+
+        //--- The Order of Arguments Matters ---
+
+        function subtractArguments(v, f) {
+            return v - f ;
+        }
+        const ArgumentsOne = subtractArguments(50, 75);
+        const ArgumentsTwo = subtractArguments(75, 50);
+
+        console.log("The Result of subtractArguments is:", ArgumentsOne, "and", ArgumentsTwo);
+
+        function clickAlert() {
+            alert("The code that i written is in inspect and in it console 👍");
+        }
     </script>
-
-</body>
+    </body>
 </html>
