@@ -20,7 +20,9 @@
         const myCusion = {
             name: 'Abdul Hadi', age: 10, class: 5, section: 'none'
         };
-
+        console.log("My Name is", myInformation.name, "and I am", myInformation.age, "years old.");
+        console.log("My Friend Name is", myFriend.name, "and He is", myFriend.Age, "years old.");
+        console.log("My Cusion Name is", myCusion.name, "and He is", myCusion.age, "years old.");
         //--- Advanced js Object ---
 
         const myFriends = [
@@ -48,6 +50,31 @@
             { name: 'Ms. Zakia'},
             { name: 'Ms. Sana'},
         ];
+
+        console.log(myFriends);
+        console.log(myTeahers);
+        //--- js Object using [] ---
+
+        const mySecondCusion = {
+            name: 'Mustafa Raza', age: 8, class: 3
+        };
+
+        console.log("My Cusion", mySecondCusion["name"], "is", mySecondCusion["age"]);
+
+        const myFather = {
+            name: 'Muhammad Furqan', age: 37, Havelearned: 'HTML, CSS, PHP, javaScript, Tailwind CSS, and Mongojb'
+        };
+
+        console.log("My Father", myFather["name"], "Have Learned", myFather["Havelearned"]);
+
+        //--- Creating an Empty Object ---
+
+     const myMother = {};
+
+     myMother["name"] = "Farzana Furqan";
+     myMother["age"] = 35;
+
+     console.log("My Mother Name is", myMother.name, "and She is", myMother.age, "years old.");
     </script>
 </body>
 </html>
