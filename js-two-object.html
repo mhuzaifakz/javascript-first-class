@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Advance Object | JavaScript</title>
+</head>
+<body>
+    <script>
+        //--- 10 object with for in loop  ---
+        const myFather = {
+            name: 'Muhammad Furqan', age: 37, country: 'Pakistan'
+        };
+
+        for (let key in myFather) {
+            console.log(key + " " + myFather[key]);
+        };
+
+        // another object
+        const myMother = {
+            name: ' Furqan', age: 35, country: 'Pakistan'
+        };
+
+        for (let key in myMother) {
+            console.log(key + " " + myMother[key]);
+        };
+
+        // another object
+        const mySister = {
+            name: 'Umama', age: 9, country: 'Pakistan'
+        };
+
+        for (let key in mySister) {
+            console.log(key + " " + mySister[key]);
+        };
+
+         // another object
+        const mySecondSister = {
+            name: 'Maria', age: 6, country: 'Pakistan'
+        };
+        for (let key in mySecondSister) {
+            console.log(key + " " + mySecondSister[key]);
+        };
+
+        // another object
+        const myThirdSister = {
+            name: 'Memona', age: 4, country: 'Pakistan'
+        };
+        for (let key in myThirdSister) {
+            console.log(key + " " + myThirdSister[key]);
+        };
+
+        // another object
+        const myBrother = {
+            name: 'Abdullah', age: 0, country: 'Pakistan'
+        };
+        for (let key in myBrother) {
+            console.log(key + " " + myBrother[key]);
+        };
+
+        // another object
+        const myInformation = {
+            name: 'Muhammad Huzaifa', age: 11, country: 'Pakistan'
+        };
+        for (let key in myInformation) {
+            console.log(key + " " + myInformation[key]);
+        };
+
+        // another object
+        const myCousin = {
+            name: 'Abdul Hadi', age: 10, country: 'Pakistan'
+        };
+        for (let key in myCousin) {
+            console.log(key + " " + myCousin[key]);
+        };
+
+        // another object
+        const mySecondCousin = {
+            name: 'Mustafa Raza', age: 8, country: 'Pakistan'
+        };
+        for (let key in mySecondCousin) {
+            console.log(key + " " + mySecondCousin[key]);
+        };
+
+        // another object
+        const myThirdCousin = {
+            name: 'Saliha', age: 6, country: 'Pakistan'
+        };
+        for (let key in myThirdCousin) {
+            console.log(key + " " + myThirdCousin[key]);
+        };
+
+        //--- 10 array with for loop  ---
+        const myFamily = [
+            { name: 'Muhammad Furqan', age: 37, country: 'Pakistan' },
+            { name: 'Furqan', age: 35, country: 'Pakistan' },
+            { name: 'Umama', age: 9, country: 'Pakistan' },
+            { name: 'Maria', age: 6, country: 'Pakistan' },
+            { name: 'Memona', age: 4, country: 'Pakistan' },
+            { name: 'Abdullah', age: 0, country: 'Pakistan' },
+            { name: 'Muhammad Huzaifa', age: 11, country: 'Pakistan' },
+            { name: 'Abdul Hadi', age: 10, country: 'Pakistan' },
+            { name: 'Mustafa Raza', age: 8, country: 'Pakistan' },
+            { name: 'Saliha', age: 6, country: 'Pakistan' }
+        ];
+
+        for (let i = 0; i < myFamily.length; i++) {
+            console.log(myFamily[i].name + " " + myFamily[i].age + " " + myFamily[i].country);
+        }
+
+        // another array
+        const myTeahers = [
+            { name: 'Ms. Farheen', country: 'Pakistan'},
+            { name: 'Ms. Saba', country: 'Pakistan'},
+            { name: 'Ms. Anam Nida', country: 'Pakistan'},
+            { name: 'Ms. Anam Tariq', country: 'Pakistan'},
+            { name: 'Ms. Shaziya', country: 'Pakistan'},
+            { name: 'Ms. Huma', country: 'Pakistan'},
+            { name: 'Ms. Sabeen', country: 'Pakistan'},
+            { name: 'Ms. Ganiya', country: 'Pakistan'},
+            { name: 'Ms. Zakia', country: 'Pakistan'},
+            { name: 'Ms. Sana', country: 'Pakistan'},
+        ];
+
+        for (let i = 0; i < myTeahers.length; i++) {
+            console.log(myTeahers[i].name + " " + myTeahers[i].country);
+        }
+
+        // another array
+        const myFriends = [
+            { name: 'Mustafa Hamza', Age: 10, class: 5, section: 'Aqua' },
+            { name: 'Ibrahim Hamza', Age: 12, class: 6, section: 'coral' },
+            { name: 'Ali', Age: 11, class: 5, section: 'coral' },
+            { name: 'esa', Age: 10, class: 5, section: 'coral' },
+            { name: 'Hamdan', Age: 10, class: 4, section: 'indigo' },
+            { name: 'Ahmed Khan', Age: 10, class: 5, section: 'none' },
+            { name: 'Ahmed Qazi', Age: 12, class: 5, section: 'beige' },
+            { name: 'Mustafa Hanan', Age: 10, class: 5, section: 'beige' },
+            { name: 'Arham', Age: 10, class: 7, section: 'Emeralde' },
+            { name: 'Danial', Age: 10, class: 5, section: 'beige' },
+        ];
+
+        for (let i = 0; i < myFriends.length; i++) {
+            console.log(myFriends[i].name + " " + myFriends[i].Age + " " + myFriends[i].class + " " + myFriends[i].section);
+        }
+    </script>
+</body>
+</html>
