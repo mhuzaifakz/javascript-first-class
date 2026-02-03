@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> How to Make a JavaScript Table</title>
+</head>
+<body>
+    <table class="w-7xl border border-red-500 shadow-md shadow-red-500 rounded-lg">
+        <thead>
+            <tr>
+                <th class="border border-red-500 p-10 text-red-300">Name</th>
+                <th class="border border-red-500 p-10 text-red-300">Age</th>
+                <th class="border border-red-500 p-10 text-red-300">City</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        const myFamily = [
+            {name: "Muhammmad Huzaifa", age: 11, city: "Karachi"},
+            {name: "Amna", age: 1, city: "Karachi"},
+            {name: "Abdul Hadi", age: 10, city: "Karachi"},
+            {name: "Umama", age: 9, city: "Karachi"},
+            {name: "Mustafa Raza", age: 8, city: "Karachi"}
+        ];
+
+        for (let i = 0; i < myFamily.length; i++) {
+            const row = document.createElement("tr");
+            for (let key in myFamily[i]) {
+                const line = document.createElement("td");
+                line.textContent = myFamily[i][key];
+                row.appendChild(line);
+                line.classList.add("border", "border-red-500", "p-10", "text-red-500", "text-center");
+            }
+            document.querySelector("tbody").appendChild(row);
+        }
+    </script>
+</body>
+</html>
