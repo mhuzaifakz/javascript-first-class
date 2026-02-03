@@ -15,7 +15,7 @@
                 <th class="border border-red-500 p-10 text-red-300">City</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="myTableBody">
 
         </tbody>
     </table>
@@ -37,7 +37,7 @@
                 row.appendChild(line);
                 line.classList.add("border", "border-red-500", "p-10", "text-red-500", "text-center");
             }
-            document.querySelector("tbody").appendChild(row);
+            document.getElementById("myTableBody").appendChild(row);
         }
     </script>
 </body>
