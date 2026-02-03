@@ -7,7 +7,7 @@
     <title> How to Make a JavaScript Table</title>
 </head>
 <body>
-    <table class="w-7xl border border-red-500 shadow-md shadow-red-500 rounded-lg">
+    <table class="w-7xl border border-red-500 shadow-md shadow-red-500 rounded-lg m-10">
         <thead>
             <tr>
                 <th class="border border-red-500 p-10 text-red-300">Name</th>
@@ -16,6 +16,19 @@
             </tr>
         </thead>
         <tbody id="myTableBody">
+
+        </tbody>
+    </table>
+
+    <table class="w-7xl border border-orange-500 shadow-md shadow-orange-500 rounded-lg m-10">
+        <thead>
+            <tr>
+                <th class="border border-orange-500 p-10 text-orange-300">Friends Name</th>
+                <th class="border border-orange-500 p-10 text-orange-300">Friends Age</th>
+                <th class="border border-orange-500 p-10 text-orange-300">City</th>
+            </tr>
+        </thead>
+        <tbody id="secondMyTableBody">
 
         </tbody>
     </table>
@@ -30,14 +43,34 @@
         ];
 
         for (let i = 0; i < myFamily.length; i++) {
-            const row = document.createElement("tr");
+            const tr = document.createElement("tr");
             for (let key in myFamily[i]) {
-                const line = document.createElement("td");
-                line.textContent = myFamily[i][key];
-                row.appendChild(line);
-                line.classList.add("border", "border-red-500", "p-10", "text-red-500", "text-center");
+                const td = document.createElement("td");
+                td.textContent = myFamily[i][key];
+                tr.appendChild(td);
+                td.className = "border border-red-500 p-5 text-red-200";
             }
-            document.getElementById("myTableBody").appendChild(row);
+            document.getElementById("myTableBody").appendChild(tr);
+        }
+
+        // another array of objects
+        const myFriends = [
+            {name: "Ali", age: 11, city: "Bahria Town"},
+            {name: "Ibrahim Hamza", age: 12, city: "Bahria Town"},
+            {name: "Mustafa Hamza", age: 10, city: "Bahria Town"},
+            {name: "Ahram", age: 13, city: "Bahria Town"},
+            {name: "Yusuf", age: 10, city: "Bahria Town"}
+        ];
+
+         for (let i = 0; i < myFriends.length; i++) {
+            const tr = document.createElement("tr");
+            for (let key in myFriends[i]) {
+                const td = document.createElement("td");
+                td.textContent = myFriends[i][key];
+                tr.appendChild(td);
+                td.className = "border border-orange-500 p-5 text-orange-200";
+            }
+            document.getElementById("secondMyTableBody").appendChild(tr);
         }
     </script>
 </body>
