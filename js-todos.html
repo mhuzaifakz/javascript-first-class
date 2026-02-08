@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Todos | javaScript</title>
+</head>
+<body>
+    <ol id="numbers">
+
+    </ol>
+    <script>
+        const todosList = [
+        { do: "Go Market and buy Things you want"},
+        { do: "Then play game for 1 hour 30 minutes"},
+        { do: "Then eat dinner"},
+        { do: "Then do school work"},
+        { do: "Then do wark that father said"},
+        { do: "Go to sleep"}
+        ];
+        const ol = document.getElementById("numbers");
+
+        for (let i = 0; i < todosList.length; i++) {
+            const li = document.createElement("li");
+            for (let key in todosList[i]) {
+                document.createElement("input");
+                
+            }
+        }
+    </script>
+</body>
+</html>

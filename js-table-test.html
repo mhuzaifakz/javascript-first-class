@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test | JavaScript</title>
+</head>
+<body>
+   <table class="border border-pink-500 rounded-lg shadow-lg shadow-pink-500 m-40">
+    <thead>
+        <tr>
+            <th class="text-[40px] p-10 text-pink-200 border border-pink-500 rounded-lg">Friends Name</th>
+            <th class="p-10 text-pink-200 border border-pink-500 rounded-lg">Friends Age</th>
+            <th class="p-10 text-pink-200 border border-pink-500 rounded-lg">City</th>
+        </tr>
+    </thead>
+    <tbody id="tdBody">
+    </tbody>
+   </table> 
+   <script>
+    const myFriends = [
+        {name: 'Ibrahim Hamza', Age: 12, city: 'Punjap'},
+        {name: 'Mustafa Hamza', Age: 10, city: 'Punjap'},
+        {name: 'Ali', Age: 11, city: 'karachi'},
+        {name: 'Ahram', Age: 14, city: 'Karachi'}
+    ];
+
+    for (let i = 0; i < myFriends.length; i++) {
+        const tr = document.createElement("tr");
+        for (let key in myFriends[i]) {
+            const td = document.createElement("td");
+            td.innerText = myFriends[i][key];
+            tr.appendChild(td);
+            td.className = "border border-pink-500 p-10 rounded-lg text-pink-300"
+        }
+        document.getElementById("tdBody").appendChild(tr);
+    }
+   </script>
+</body>
+</html>
