@@ -7,27 +7,47 @@
     <title>Todos | javaScript</title>
 </head>
 <body>
-    <ol id="numbers">
-
-    </ol>
+    <ol id="todosListOne"></ol>
     <script>
         const todosList = [
-        { do: "Go Market and buy Things you want"},
-        { do: "Then play game for 1 hour 30 minutes"},
-        { do: "Then eat dinner"},
-        { do: "Then do school work"},
-        { do: "Then do wark that father said"},
-        { do: "Go to sleep"}
+        { id: 4, do: 'How to make list', comleted: true},
+        { id: 8, do: 'How to make table', comleted: false},
+        { id: 12, do: 'Learn javascripth', comleted: true},
+        { id: 16, do: 'Do house work', comleted: false},
+        { id: 20, do: 'Do home work', comleted: true},
+        { id: 24, do: 'Clean house', comleted: false},
+        { id: 28, do: 'Do home work rhat dad give us', comleted: true},
+        { id: 32, do: 'Play with toys with sisters', comleted: false},
+        { id: 36, do: 'Play football with my Friends', comleted: true},
+        { id: 40, do: 'Then go o sleep', comleted: false}
         ];
-        const ol = document.getElementById("numbers");
+        const ol = document.getElementById("todosListOne");
 
         for (let i = 0; i < todosList.length; i++) {
+
             const li = document.createElement("li");
-            for (let key in todosList[i]) {
-                document.createElement("input");
-                
-            }
-        }
+
+            const label = document.createElement("label");
+
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.checked = todosList[i].completed;
+
+            const span = document.createElement("span");
+            span.innerText = "  " + todosList[i].do;
+
+            checkbox.onchange = function () {
+                todosList[i].completed = checkbox.checked;
+                span.style.textDecoration = checkbox.checked ? "line-through" : "none";
+                console.log(todosList);
+            };
+
+            label.appendChild(checkbox);
+            label.appendChild(span);
+            
+            li.appendChild(label);
+            ol.appendChild(li);
+        };
     </script>
 </body>
 </html>
